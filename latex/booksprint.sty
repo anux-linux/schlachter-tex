@@ -1,0 +1,92 @@
+% SILENCE THE WARNINGS!
+\usepackage{silence}
+\WarningFilter{latex}{Marginpar on page}
+\WarningFilter{bibentry}{You have used \nobibliography*}
+
+%\geometry{showframe}% for debugging purposes -- displays the margins
+
+% Set input encoding to allow e.g. accents
+\usepackage[german]{babel}
+\usepackage[utf8x]{inputenc}
+
+% Set up the images/graphics package
+\usepackage{graphicx}
+\setkeys{Gin}{width=\linewidth,totalheight=\textheight,keepaspectratio}
+\graphicspath{{graphics/}}
+
+% The following package makes prettier tables.
+\usepackage{booktabs}
+\usepackage{hyperref}
+
+% The units package provides nice, non-stacked fractions and better spacing
+% for units.
+\usepackage{units}
+\usepackage{todonotes}
+
+% The fancyvrb package lets us customize the formatting of verbatim
+% environments.  We use a slightly smaller font.
+\usepackage{fancyvrb}
+\fvset{fontsize=\normalsize}
+
+% Small sections of multiple columns
+\usepackage{multicol}
+
+% Setting header
+\usepackage{fancyhdr}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\leftmark}
+\fancyhead[R]{\thepage}
+\renewcommand{\headrulewidth}{0pt}
+
+
+\usepackage{pgffor}
+
+
+% Provides paragraphs of dummy text
+\usepackage{lipsum}
+
+\usepackage[framemethod=TikZ]{mdframed}
+
+% These commands are used to pretty-print LaTeX commands
+\newcommand{\doccmd}[1]{\texttt{\textbackslash#1}}% command name -- adds backslash automatically
+\newcommand{\docopt}[1]{\ensuremath{\langle}\textrm{\textit{#1}}\ensuremath{\rangle}}% optional command argument
+\newcommand{\docarg}[1]{\textrm{\textit{#1}}}% (required) command argument
+\newenvironment{docspec}{\begin{quote}\noindent}{\end{quote}}% command specification environment
+\newcommand{\docenv}[1]{\textsf{#1}}% environment name
+\newcommand{\docpkg}[1]{\texttt{#1}}% package name
+\newcommand{\doccls}[1]{\texttt{#1}}% document class name
+\newcommand{\docclsopt}[1]{\texttt{#1}}% document class option name
+
+
+%Multi column table of contents
+\usepackage[toc]{multitoc}
+\renewcommand*{\multicolumntoc}{3}
+%\setlength{\columnseprule}{1pt}
+
+\usepackage{xcolor}
+\usepackage{tocloft}
+
+% tocloft configuration for custom table of contents
+% As this interferes with the hyperref setup, the link styling has to be done local or links have to be removed for the toc.
+\renewcommand{\cftpartfont}{\bfseries}
+\renewcommand{\cftpartpagefont}{\bfseries}
+\renewcommand{\cftsecpagefont}{\small}
+\renewcommand{\cftsecfont}{\small}
+
+
+
+\setcounter{tocdepth}{1}
+
+% schow on line on next page
+\usepackage[defaultlines=4,all]{nowidow}
+
+\newcommand{\superheding}[1]{\vspace{12pt}\hfill\break\textsc{#1}\vspace{0pt}\noclub[10]}% document super heading
+\newcommand{\subtext}[1]{\vspace{12pt}\hfill\break\textit{#1}\vspace{0pt}\noclub[10]}% document class for sub heading 
+\newcommand{\subref}[1]{\hfill\break\textsl{#1}\vspace{-6pt}\noclub[10]}% document class for sub heading 
+\newcommand{\suboverview}[1]{\hfill\break\textsl{#1}\vspace{-0pt}\noclub[10]}% document class for sub heading 
+
+\usepackage{sectsty}
+\sectionfont{\centering}
+\usepackage[perpage]{footmisc}
