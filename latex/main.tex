@@ -1,0 +1,138 @@
+%\documentclass{tufte-handout}
+
+\documentclass[fontsize=14pt]{article}
+\usepackage{geometry}
+\geometry{a4paper,marginparwidth=5cm,outer=10cm}
+
+\usepackage{booksprint}
+
+%\geometry{textwidth=100mm}
+
+\usepackage{kantlipsum} % for mock text
+
+\setcounter{secnumdepth}{0}
+
+\begin{document}
+
+\begin{titlepage}
+\newgeometry{textwidth=150mm}
+\centering{Version 2000 \\
+Neue revidierte Fassung }\\
+\vspace{20mm}
+		\centering{
+			{\fontsize{40}{48}\selectfont 
+			Die Bibel}
+		}\\
+			
+		\vspace{20mm}
+		\centering{Übersetzt von Franz Eugen Schlachter}\\
+		\centering{nach dem hebräischen und griechischen Grundtext }\\
+		\vspace{\fill
+		\centering{Genfer Bibelgesellschaft}\\
+		\centering{Christliche Literatur-Verbreitung Bielefeld}\\}
+\end{titlepage}
+
+
+%v.4 copyright page
+\newpage
+~\vfill
+\thispagestyle{empty}
+\small{Die Bibel Schlachter Ubersetzung - Version 2000 
+
+Schreibrandausgabe generiert von \href{https://www.schlachterbibel.de}{www.schlachterbibel.de}
+
+© Genfer Bibelgesellschaft 
+}
+
+\newpage
+\setcounter{page}{1}
+\begin{multicols*}{3}
+\newgeometry{textwidth=160mm}
+\tableofcontents
+\thispagestyle{empty}
+\end{multicols*}
+\onecolumn
+
+\part{Altes Testament}
+\thispagestyle{empty}
+\newpage
+
+%\include{exampleData}
+%\include{1Mose}
+
+\input{bible/1_mose}
+\input{bible/2_mose}
+\input{bible/3_mose}
+\input{bible/4_mose}
+\input{bible/5_mose}
+\input{bible/josua}
+\input{bible/richter}
+\input{bible/ruth}
+\input{bible/1_samuel}
+\input{bible/2_samuel}
+\input{bible/1_koenige}
+\input{bible/2_koenige}
+\input{bible/1_chronik}
+\input{bible/2_chronik}
+\input{bible/esra}
+\input{bible/nehemia}
+\input{bible/esther}
+\input{bible/hiob}
+\input{bible/psalm}
+\input{bible/sprueche}
+\input{bible/prediger}
+\input{bible/hoheslied}
+\input{bible/jesaja}
+\input{bible/jeremia}
+\input{bible/klagelieder}
+\input{bible/hesekiel}
+\input{bible/daniel}
+\input{bible/hosea}
+\input{bible/joel}
+\input{bible/amos}
+\input{bible/obadja}
+\input{bible/jona}
+\input{bible/micha}
+\input{bible/nahum}
+\input{bible/habakuk}
+\input{bible/zephanja}
+\input{bible/haggai}
+\input{bible/sacharja}
+\input{bible/maleachi}
+
+
+\part{Neues Testament}
+\thispagestyle{empty}
+\newpage
+
+%Files from Scraper
+\input{bible/matthaeus}
+\input{bible/markus}
+\input{bible/lukas}
+\input{bible/johannes}
+\input{bible/apostelgeschichte}
+\input{bible/roemer}
+\input{bible/1_korinther}
+\input{bible/2_korinther}
+\input{bible/galater}
+\input{bible/epheser}
+\input{bible/philipper}
+\input{bible/kolosser}
+\input{bible/1_thessalonicher}
+\input{bible/2_thessalonicher}
+\input{bible/1_timotheus}
+\input{bible/2_timotheus}
+\input{bible/titus}
+\input{bible/philemon}
+\input{bible/hebraeer}
+\input{bible/jakobus}
+\input{bible/1_petrus}
+\input{bible/2_petrus}
+\input{bible/1_johannes}
+\input{bible/2_johannes}
+\input{bible/3_johannes}
+\input{bible/judas}
+\input{bible/offenbarung}
+
+
+\end{document}
